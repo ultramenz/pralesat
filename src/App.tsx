@@ -79,7 +79,7 @@ const Navbar = ({ onLoginClick, isLoggedIn, onLogout, scrollToSection, onViewDas
     { name: 'Beranda', id: 'home' },
     { name: 'Visi Misi', id: 'visimisi' },
     { name: 'Statistik', id: 'stats' },
-    { name: 'Tenaga Pendidik', id: 'teachers' },
+    { name: 'Pembina', id: 'teachers' },
     { name: 'Berita', id: 'news' },
   ];
 
@@ -1536,9 +1536,9 @@ export default function App() {
       // Mock Data Fallback (Only if LocalStorage is also empty)
       if (!localStorage.getItem('teachers')) {
         const mockTeachers = [
-          { id: 1, name: 'Budi Santoso', position: 'Kepala Sekolah', photoUrl: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' },
-          { id: 2, name: 'Siti Aminah', position: 'Guru Matematika', photoUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' },
-          { id: 3, name: 'Ahmad Rizki', position: 'Guru Olahraga', photoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' }
+          { id: 1, name: 'CAK ALIP', position: 'Kepala Sekolah', photoUrl: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' },
+          { id: 2, name: 'LIP KELP KELIP', position: 'LABUBU', photoUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' },
+          { id: 3, name: 'MBUT', position: 'MEN', photoUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' }
         ];
         setTeachers(mockTeachers);
         localStorage.setItem('teachers', JSON.stringify(mockTeachers));
@@ -1546,8 +1546,8 @@ export default function App() {
 
       if (!localStorage.getItem('articles')) {
         const mockArticles = [
-          { id: 1, title: 'Penerimaan Siswa Baru 2024', content: 'SD Harapan Bangsa membuka pendaftaran siswa baru untuk tahun ajaran 2024/2025. Segera daftarkan putra-putri Anda!', imageUrl: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', date: '2024-01-01', author: 'Admin' },
-          { id: 2, title: 'Juara 1 Lomba Cerdas Cermat', content: 'Selamat kepada tim cerdas cermat SD Harapan Bangsa yang telah meraih juara 1 tingkat kecamatan.', imageUrl: 'https://images.unsplash.com/photo-1577896335477-2858506f970d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', date: '2024-02-15', author: 'Admin' }
+          { id: 1, title: 'Penerimaan ANGGOTA BARU', content: 'BACOT!', imageUrl: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', date: '2024-01-01', author: 'Admin' },
+          { id: 2, title: 'Juara 1 Lomba EP EP', content: 'Selamat kepada CAK LIP.', imageUrl: 'https://images.unsplash.com/photo-1577896335477-2858506f970d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', date: '2024-02-15', author: 'Admin' }
         ];
         setArticles(mockArticles);
         localStorage.setItem('articles', JSON.stringify(mockArticles));
@@ -1566,21 +1566,21 @@ export default function App() {
       
       if (!localStorage.getItem('settings')) {
          const mockSettings = {
-            school_name: 'SD Harapan Bangsa',
+            school_name: 'PRAMUKA SMPN 1 LENGKONG',
             hero_image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-            visi: 'Terwujudnya peserta didik yang beriman, cerdas, terampil, mandiri, dan berwawasan global.',
+            visi: 'PACARKOEH NAULAA.',
             misi: JSON.stringify([
-              'Melaksanakan pembelajaran yang aktif, kreatif, dan menyenangkan.',
-              'Menanamkan nilai-nilai keimanan dan ketaqwaan.',
-              'Mengembangkan bakat dan minat siswa melalui ekstrakurikuler.',
-              'Mewujudkan lingkungan sekolah yang bersih dan asri.'
+              'NAULA IMOET.',
+              'LALA GEMOYS.',
+              'LALA UCYUUU.',
+              'LALA CYEBOLL.'
             ]),
             registration_link: '#',
-            contact_address: 'Jl. Pendidikan No. 123, Jakarta Selatan, DKI Jakarta 12345',
-            contact_phone: '(021) 1234-5678',
-            contact_email: 'info@sdharapanbangsa.sch.id',
+            contact_address: 'JL BANJARDOWOKKKKKKKKKKKKKK',
+            contact_phone: 'KEPO BANGET ANJ',
+            contact_email: 'RORR',
             social_facebook: '#',
-            social_instagram: '#',
+            social_instagram: 'aloalip, FOLLOW EN CAK',
             social_twitter: '#',
             social_linkedin: '#'
          };
